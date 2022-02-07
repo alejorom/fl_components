@@ -11,6 +11,7 @@ class Listview2Screen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('ListView #2'),
         backgroundColor: Colors.teal,
+        elevation: 10,
       ),
       body: ListView.separated(
           itemBuilder: (context, index) => ListTile(
