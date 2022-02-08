@@ -19,6 +19,13 @@ class MyApp extends StatelessWidget {
         "alert": (BuildContext context) => const AlertScreen(),
         "card": (BuildContext context) => const CardScreen(),
       },
+
+      // Se navega a un route no especificada.
+      onGenerateRoute: (settings) {
+        return MaterialPageRoute(
+          builder: (context) => const AlertScreen(),
+        );
+      },
     );
   }
 }

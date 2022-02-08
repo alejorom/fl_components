@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fl_components/screens/screens.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -18,7 +19,14 @@ class HomeScreen extends StatelessWidget {
             Icons.arrow_forward_ios,
             color: Colors.teal,
           ),
-          onTap: () {},
+          onTap: () {
+            // final route = MaterialPageRoute(
+            //   builder: (context) => const Listview1Screen(),
+            // );
+            // Navigator.push(context, route);
+
+            Navigator.pushNamed(context, 'card');
+          },
         ),
         separatorBuilder: (_, __) => const Divider(),
         itemCount: 10,
