@@ -13,6 +13,13 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getAppRoutes(),
+      theme: ThemeData.light().copyWith(
+        primaryColor: Colors.teal,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.teal,
+          elevation: 10,
+        ),
+      ),
 
       // Se navega a un route no especificada.
       onGenerateRoute: (settings) => AppRoutes.onGenerateRoute(settings),
