@@ -3,13 +3,18 @@ import 'package:flutter/material.dart';
 class Listview2Screen extends StatelessWidget {
   const Listview2Screen({Key? key}) : super(key: key);
 
-  final opciones = const ['Dirt', 'Formula 1', 'RR3', 'CSR2'];
+  final opciones = const [
+    'The 100',
+    'The Witcher',
+    'Lost in Space',
+    'The Expanse',
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('ListView #2'),
+        title: const Center(child: Text('Series Espectaculares')),
         backgroundColor: Colors.teal,
         elevation: 10,
       ),
