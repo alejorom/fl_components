@@ -1,3 +1,4 @@
+import 'package:fl_components/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:fl_components/router/app_routes.dart';
 
@@ -13,13 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getAppRoutes(),
-      theme: ThemeData.light().copyWith(
-        primaryColor: Colors.teal,
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.teal,
-          elevation: 10,
-        ),
-      ),
+      theme: AppTheme.lightTheme,
 
       // Se navega a un route no especificada.
       onGenerateRoute: (settings) => AppRoutes.onGenerateRoute(settings),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fl_components/theme/app_theme.dart';
 import 'package:fl_components/router/app_routes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           title: Text(AppRoutes.menuOptions[index].name),
           leading: Icon(
             AppRoutes.menuOptions[index].icon,
-            color: Colors.teal,
+            color: AppTheme.primaryColor,
           ),
           onTap: () {
             Navigator.pushNamed(context, AppRoutes.menuOptions[index].route);
