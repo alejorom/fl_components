@@ -14,13 +14,13 @@ class AppRoutes {
     ),
     MenuOption(
       route: 'listview1',
-      name: 'List View #1',
+      name: 'Juegos Espectaculares',
       screen: const Listview1Screen(),
       icon: Icons.list,
     ),
     MenuOption(
       route: 'listview2',
-      name: 'List View #2',
+      name: 'Series Espectaculares',
       screen: const Listview2Screen(),
       icon: Icons.list_sharp,
     ),

@@ -8,6 +8,7 @@ class Listview1Screen extends StatelessWidget {
     'Formula 1',
     'RR3',
     'CSR2',
+    'Kingdoms',
   ];
 
   @override

@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           title: Text(AppRoutes.menuOptions[index].name),
           leading: Icon(
             AppRoutes.menuOptions[index].icon,
-            color: AppTheme.primaryColor,
+            color: AppTheme.primary,
           ),
           onTap: () {
             Navigator.pushNamed(context, AppRoutes.menuOptions[index].route);
