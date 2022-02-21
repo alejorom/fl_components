@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getAppRoutes(),
-      theme: AppTheme.darkTheme,
+      theme: AppTheme.lightTheme,
 
       // Se navega a un route no especificada.
       onGenerateRoute: (settings) => AppRoutes.onGenerateRoute(settings),
