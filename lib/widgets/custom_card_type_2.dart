@@ -1,30 +1,41 @@
+import 'package:fl_components/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class CustomCardType2 extends StatelessWidget {
-  const CustomCardType2({Key? key}) : super(key: key);
+  final String imageURL;
+  final String? name;
+  const CustomCardType2({Key? key, required this.imageURL, this.name})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Card(
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(18),
+      ),
+      elevation: 10,
+      shadowColor: AppTheme.primary.withOpacity(0.5),
       child: Column(
         children: [
-          const FadeInImage(
+          FadeInImage(
             image: NetworkImage(
-              'https://img.wallpapersafari.com/desktop/1920/1080/21/7/O2FtdR.jpg',
+              imageURL,
             ),
-            placeholder: AssetImage('assets/jar-loading.gif'),
+            placeholder: const AssetImage('assets/jar-loading.gif'),
             width: double.infinity,
             height: 230,
             fit: BoxFit.cover,
-            // fadeInDuration: Duration(
-            //   microseconds: 300,
-            // ),
+            fadeInDuration: const Duration(
+              milliseconds: 300,
+            ),
           ),
-          Container(
-            alignment: AlignmentDirectional.centerEnd,
-            padding: const EdgeInsets.only(right: 20, top: 10, bottom: 10),
-            child: const Text('Una hermoza Elfa'),
-          ),
+          if (name != null)
+            Container(
+              alignment: AlignmentDirectional.centerEnd,
+              padding: const EdgeInsets.only(right: 20, top: 10, bottom: 10),
+              child: Text(name!),
+            ),
         ],
       ),
     );
