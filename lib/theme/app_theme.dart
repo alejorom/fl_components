@@ -20,6 +20,21 @@ class AppTheme {
       ),
     ),
 
+    // Tema de los ActionButton flotantes
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: primary,
+      elevation: 5,
+    ),
+
+    // Tema para los ElevatedButtons.
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        primary: primary,
+        shape: const StadiumBorder(),
+        elevation: 0,
+      ),
+    ),
+
     scaffoldBackgroundColor: Colors.white,
   );
 
