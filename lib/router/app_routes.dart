@@ -36,6 +36,12 @@ class AppRoutes {
       screen: const CardScreen(),
       icon: Icons.card_membership_rounded,
     ),
+    MenuOption(
+      route: 'avatar',
+      name: 'Circle Avatar',
+      screen: const AvatarScreen(),
+      icon: Icons.supervised_user_circle_outlined,
+    ),
   ];
 
   // Construir un mapa dinámico para el menú
