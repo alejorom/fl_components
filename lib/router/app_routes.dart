@@ -42,6 +42,12 @@ class AppRoutes {
       screen: const AvatarScreen(),
       icon: Icons.supervised_user_circle_outlined,
     ),
+    MenuOption(
+      route: 'animated',
+      name: 'Animated Container',
+      screen: const AnimatedScreen(),
+      icon: Icons.play_circle_outline_rounded,
+    ),
   ];
 
   // Construir un mapa dinámico para el menú
