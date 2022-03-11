@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const Color primary = Colors.green;
+  static const Color primary = Colors.teal;
 
   // Definición del tema claro.
   static final ThemeData lightTheme = ThemeData.light().copyWith(
