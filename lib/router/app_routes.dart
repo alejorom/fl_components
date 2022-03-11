@@ -7,52 +7,41 @@ class AppRoutes {
 
   static final menuOptions = <MenuOption>[
     MenuOption(
-      route: 'home',
-      name: 'Home Screen',
-      screen: const HomeScreen(),
-      icon: Icons.home,
-    ),
+        route: 'listview1',
+        name: 'Juegos Espectaculares',
+        screen: const Listview1Screen(),
+        icon: Icons.list),
     MenuOption(
-      route: 'listview1',
-      name: 'Juegos Espectaculares',
-      screen: const Listview1Screen(),
-      icon: Icons.list,
-    ),
+        route: 'listview2',
+        name: 'Series Espectaculares',
+        screen: const Listview2Screen(),
+        icon: Icons.list_sharp),
     MenuOption(
-      route: 'listview2',
-      name: 'Series Espectaculares',
-      screen: const Listview2Screen(),
-      icon: Icons.list_sharp,
-    ),
+        route: 'alert',
+        name: 'Alertas o Alerts',
+        screen: const AlertScreen(),
+        icon: Icons.sim_card_alert_rounded),
     MenuOption(
-      route: 'alert',
-      name: 'Alertas o Alerts',
-      screen: const AlertScreen(),
-      icon: Icons.sim_card_alert_rounded,
-    ),
+        route: 'card',
+        name: 'Tarjetas o Cards',
+        screen: const CardScreen(),
+        icon: Icons.card_membership_rounded),
     MenuOption(
-      route: 'card',
-      name: 'Tarjetas o Cards',
-      screen: const CardScreen(),
-      icon: Icons.card_membership_rounded,
-    ),
+        route: 'avatar',
+        name: 'Circle Avatar',
+        screen: const AvatarScreen(),
+        icon: Icons.supervised_user_circle_outlined),
     MenuOption(
-      route: 'avatar',
-      name: 'Circle Avatar',
-      screen: const AvatarScreen(),
-      icon: Icons.supervised_user_circle_outlined,
-    ),
-    MenuOption(
-      route: 'animated',
-      name: 'Animated Container',
-      screen: const AnimatedScreen(),
-      icon: Icons.play_circle_outline_rounded,
-    ),
+        route: 'animated',
+        name: 'Animated Container',
+        screen: const AnimatedScreen(),
+        icon: Icons.play_circle_outline_rounded),
   ];
 
   // Construir un mapa dinámico para el menú
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
     Map<String, Widget Function(BuildContext)> appRoutes = {};
+    appRoutes.addAll({'home': (BuildContext context) => const HomeScreen()});
 
     // Construir el mapa de rutas dinámicamente con base a MenuOptions
     for (final option in menuOptions) {
