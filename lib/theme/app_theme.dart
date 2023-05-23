@@ -16,7 +16,7 @@ class AppTheme {
     // Tema de los TextButtom
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        primary: primary,
+        foregroundColor: primary,
       ),
     ),
 
@@ -29,7 +29,7 @@ class AppTheme {
     // Tema para los ElevatedButtons.
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        primary: primary,
+        backgroundColor: primary,
         shape: const StadiumBorder(),
         elevation: 0,
       ),
